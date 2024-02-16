@@ -47,13 +47,33 @@ export const style_01 = StyleSheet.create({
     cont: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
+    paddingTop: "5%",
+    backgroundColor: "#F5EEE6"
     },
     
     h1: {
     fontSize: 32,
     fontWeight: 'bold',
     color: '#000000',
+    textAlign: 'center'
     },
-    
+
+    image: {
+        width: '100%',
+        height: 350,
+        marginBottom: 20,
+        marginTop: 20,
+    },
+    paragraph: {
+        fontSize: 16,
+        color: '#000000',
+        textAlign: 'justify',
+        margin: 25,
+
+    },
+    logo: {
+        width: 50,
+        height: 50,
+        resizeMode: 'contain',
+    },
 });
