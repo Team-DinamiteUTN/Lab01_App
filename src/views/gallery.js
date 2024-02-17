@@ -1,12 +1,13 @@
 import React from 'react';
 import { SafeAreaView, Text, View } from 'react-native';
 import {style_01} from '../styles/style_01';
-
-const Gallery = () => {
+import GetBirds from '../components/getBirds';
+const Gallery = ({navigation}) => {
     return(
         <SafeAreaView style={style_01.cont}>
             <View>
                 <Text style={style_01.h1}>Gallery View</Text>
+                <GetBirds navegar={navigation} />
             </View>
         </SafeAreaView>
     );

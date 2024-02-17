@@ -37,5 +37,7 @@ com.avescostarica.app-packageDebugResources-35 C:\Users\Sebastian Mata\ReactProj
 com.avescostarica.app-merged_res-36 C:\Users\Sebastian Mata\ReactProjects\Lab01_App\android\app\build\intermediates\merged_res\debug
 com.avescostarica.app-debug-37 C:\Users\Sebastian Mata\ReactProjects\Lab01_App\android\app\src\debug\res
 com.avescostarica.app-main-38 C:\Users\Sebastian Mata\ReactProjects\Lab01_App\android\app\src\main\res
-com.avescostarica.app-packaged_res-39 C:\Users\Sebastian Mata\ReactProjects\Lab01_App\node_modules\react-native-safe-area-context\android\build\intermediates\packaged_res\debug
-com.avescostarica.app-packaged_res-40 C:\Users\Sebastian Mata\ReactProjects\Lab01_App\node_modules\react-native-screens\android\build\intermediates\packaged_res\debug
+com.avescostarica.app-packaged_res-39 C:\Users\Sebastian Mata\ReactProjects\Lab01_App\node_modules\react-native-gesture-handler\android\build\intermediates\packaged_res\debug
+com.avescostarica.app-packaged_res-40 C:\Users\Sebastian Mata\ReactProjects\Lab01_App\node_modules\react-native-reanimated\android\build\intermediates\packaged_res\debug
+com.avescostarica.app-packaged_res-41 C:\Users\Sebastian Mata\ReactProjects\Lab01_App\node_modules\react-native-safe-area-context\android\build\intermediates\packaged_res\debug
+com.avescostarica.app-packaged_res-42 C:\Users\Sebastian Mata\ReactProjects\Lab01_App\node_modules\react-native-screens\android\build\intermediates\packaged_res\debug
