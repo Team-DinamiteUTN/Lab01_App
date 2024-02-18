@@ -16,7 +16,7 @@ const Drawer = createDrawerNavigator();
 const BirdGallery = () => {
   return (
     <Stack.Navigator>
-    <Stack.Screen name="ImgGallery" component={Gallery} options={{title: 'ImgGallery'}} />
+    <Stack.Screen name="ImgGallery" component={Gallery} options={{title: 'Birds View'}} />
     <Stack.Screen
       name="InfoBird"
       component={InfoBird}

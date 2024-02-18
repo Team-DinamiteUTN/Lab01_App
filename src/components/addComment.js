@@ -3,7 +3,7 @@ import {View, Text, TextInput, TouchableOpacity} from 'react-native';
 import {PATHURL, PORT} from './config/config';
 import axios from 'axios';
 
-import {style_01} from '../styles/style_01';
+import { styleBirds } from '../styles/styleBirds';
 
 import {useState} from 'react';
 
@@ -43,25 +43,25 @@ return (
 <View>
     <View>
     <TextInput
-        style={style_01.entries}
+        style={styleBirds.entries}
         value={txtComment}
-        placeholder={'Write yours comment...'}
+        placeholder={'Write your comment...'}
         onChangeText={newValue => {
         setComment(newValue);
         }}
     />
     <TextInput
-        style={style_01.entries}
+        style={styleBirds.entries}
         value={txtAuthor}
-        placeholder={'Write yours nickname'}
+        placeholder={'Write your nickname'}
         onChangeText={newValue => {
         setAuthor(newValue);
         }}
     />
     <TouchableOpacity
-        style={style_01.itemText2}
+        style={styleBirds.itemText2}
         onPress={() => onPressAddComments()}>
-        <Text style={style_01.tit_04}> Add Comment </Text>
+        <Text style={styleBirds.tit_04}> Add Comment </Text>
     </TouchableOpacity>
     </View>
 </View>

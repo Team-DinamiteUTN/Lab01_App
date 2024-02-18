@@ -1,9 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import {PATHURL, PORT} from './config/config';
-import {style_01} from '../styles/style_01';
+import { styleBirds } from '../styles/styleBirds';
 
 import {
 FlatList,
+Image,
+ScrollView,
 SafeAreaView,
 Text,
 TouchableOpacity,
@@ -41,16 +43,18 @@ nav.navigate('InfoComment', {token: token});
 
 return (
 <SafeAreaView>
-    <View style={style_01.card}>
-    <Text style={style_01.tit_02}>{data.name}</Text>
-    <Text style={style_01.tit_02}>{data.description}</Text>
+    <ScrollView>
+    <View style={styleBirds.card}>
+    <Text style={styleBirds.tit_02}>{data.name}</Text>
+    <Image style ={styleBirds.imgContainer} source={require('../imgs/Pigeons.png')} />
+    <Text style={styleBirds.tit_02}>{data.description}</Text>
     </View>
     <View>
     <TouchableOpacity
-        style={style_01.itemText2}
+        style={styleBirds.itemText2}
         onPress={() => onPressViewAddComment(data._id)}>
         <View>
-        <Text style={style_01.tit_04}>Add Comment</Text>
+        <Text style={styleBirds.tit_04}>Add Comment</Text>
         </View>
     </TouchableOpacity>
     </View>
@@ -58,14 +62,15 @@ return (
     data={data.comments}
     keyExtractor={({id}, index) => id}
     renderItem={({item}) => (
-        <TouchableOpacity key={item.comment} style={style_01.itemText}>
+        <TouchableOpacity key={item.comment} style={styleBirds.itemText}>
         <View>
-            <Text style={style_01.tit_02}>{item.comment}</Text>
-            <Text style={style_01.author}>{item.author}</Text>
+            <Text style={styleBirds.tit_02}>{item.comment}</Text>
+            <Text style={styleBirds.author}>{item.author}</Text>
         </View>
         </TouchableOpacity>
     )}
     />
+    </ScrollView>
 </SafeAreaView>
 );
 };
