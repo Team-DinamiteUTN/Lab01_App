@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-export const style_01 = StyleSheet.create({
+export const styleBirds = StyleSheet.create({
     tit_01: {
     alignItems: 'center',
     textAlign: 'center',
@@ -66,5 +66,7 @@ export const style_01 = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'right',
     color: '#000000',
+    },
+    imgContainer:{
     },
 });

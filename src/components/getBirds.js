@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {PATHURL, PORT} from './config/config';
-import {style_01} from '../styles/style_01';
+import { Image } from 'react-native';
+import { styleBirds } from '../styles/styleBirds';
 
 import {
 FlatList,
@@ -42,10 +43,11 @@ return (
     renderItem={({item}) => (
         <TouchableOpacity
         key={item.name}
-        style={style_01.itemText}
+        style={styleBirds.itemText}
         onPress={() => onPressViewArticle(item._id)}>
         <View>
-            <Text style={style_01.tit_02}>{item.name}</Text>
+            <Text style={styleBirds.tit_02}>{item.name}</Text>
+            <Image style ={styleBirds.imgContainer} source={require('../imgs/Pigeons.png')} />
         </View>
         </TouchableOpacity>
     )}

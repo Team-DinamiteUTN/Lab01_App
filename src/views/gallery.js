@@ -6,7 +6,6 @@ const Gallery = ({navigation}) => {
     return(
         <SafeAreaView style={style_01.cont}>
             <View>
-                <Text style={style_01.h1}>Gallery View</Text>
                 <GetBirds navegar={navigation} />
             </View>
         </SafeAreaView>
