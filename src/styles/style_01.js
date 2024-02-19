@@ -48,6 +48,7 @@ export const style_01 = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: '#F5EEE6'
     },
     
     h1: {
@@ -55,5 +56,33 @@ export const style_01 = StyleSheet.create({
     fontWeight: 'bold',
     color: '#000000',
     },
-    
+
+    referen01: {
+        fontSize: 15,
+        padding: 20,
+        marginTop: -230,
+        color: 'black',
+      },
+      
+      referenNormal: {
+        fontSize: 15,
+        padding: 20,
+        marginTop: -20,
+        color: 'black',
+      },
+      
+      containerRefe: {
+        paddingTop: 10, 
+      },
+
+      imgRefe:{
+        width: '100', 
+        height: 200, 
+        resizeMode: 'contain', 
+     },
+
+     background: {
+        flex: 1,
+        backgroundColor: '#f0f0f0', 
+      },
 });

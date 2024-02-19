@@ -38,6 +38,7 @@ nav.navigate('InfoBird', {token: token});
 return (
 <SafeAreaView>
     <FlatList
+    contentContainerStyle={{ paddingTop: 30 }}
     data={data}
     keyExtractor={({id}, index) => id}
     renderItem={({item}) => (
@@ -45,7 +46,7 @@ return (
         key={item.name}
         style={styleBirds.itemText}
         onPress={() => onPressViewArticle(item._id)}>
-        <View>
+        <View style={styleBirds.itemContainer}>
             <Text style={styleBirds.tit_02}>{item.name}</Text>
             <Image style ={styleBirds.imgContainer} source={require('../imgs/Pigeons.png')} />
         </View>
