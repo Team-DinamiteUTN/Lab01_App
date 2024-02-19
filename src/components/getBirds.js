@@ -14,6 +14,29 @@ View,
 import axios from 'axios';
 
 const GetBirds = props => {
+
+const getElementImage = (element)=>{
+    switch(element){
+        case 'Quetzal':
+            return require('../imgs/Birds/Quetzal.jpg')
+        case 'Tucan Pico Iris':
+            return require('../imgs/Birds/Tucan.jpg')
+        case 'Lapa Roja':
+            return require('../imgs/Birds/LapaRoja.jpg')
+        case 'Saltarín Colilargo':
+            return require('../imgs/Birds/SaltarinColilargo.jpg')
+        case 'Cabezón Cabeza roja':
+            return require('../imgs/Birds/Cabezon.jpg')
+        case 'Momo Cijiceleste':
+            return require('../imgs/Birds/MomoCiji.jpg')
+        case 'Colibrí Morado':
+            return require('../imgs/Birds/ColibriMorado.jpg')
+        case 'Colibrí coroniblanco':
+            return require('../imgs/Birds/Coriblanco.jpg')
+        
+    }
+}
+
 const nav = props.navegar;
 const [data, setData] = useState([]);
 
@@ -39,6 +62,7 @@ nav.navigate('InfoBird', {token: token});
 return (
 <SafeAreaView>
     <FlatList
+    contentContainerStyle={{ paddingTop: 30 }}
     data={data}
     keyExtractor={({id}, index) => id}
     renderItem={({item}) => (
@@ -46,10 +70,10 @@ return (
         key={item.name}
         style={styleBirds.itemText}
         onPress={() => onPressViewArticle(item._id)}>
-        <View>
+        <View style={styleBirds.itemContainer}>
             <Text style={styleBirds.tit_02}>{item.name}</Text>
-            {/* <Image style ={styleBirds.imgContainer} source={require('../imgs/Pigeons.png')} /> */}
-            <Carousel/>
+            <Image source={getElementImage(item.name)} style={{width: 334, height: 230}}/>
+            {/*<Carousel/>*/}
         </View>
         </TouchableOpacity>
     )}

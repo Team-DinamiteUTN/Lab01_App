@@ -38,19 +38,19 @@ const Carousel = () =>{
     const carouselData = [
         {
             id: "01",
-            image: require('../imgs/BirdFlying.jpg'),
+            image: require('../imgs/Birds/BirdFlying.jpg'),
         },
         {
             id: "02",
-            image: require('../imgs/BirdWater.png'),
+            image: require('../imgs/Birds/BirdWater.png'),
         },
         {
             id: "03",
-            image: require('../imgs/Parrot.png'),
+            image: require('../imgs/Birds/Quetzal.jpg'),
         },
         {
             id: "04",
-            image: require('../imgs/Pigeons.png'),
+            image: require('../imgs/Birds/Pigeons.png'),
         },
     ]
     //Display Images
