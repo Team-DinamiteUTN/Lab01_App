@@ -9,6 +9,7 @@ export const styleBirds = StyleSheet.create({
     },
 
     itemText: {
+    backgroundColor: "#F3D7CA" ,
     borderRadius: 10,
     margin: 3,
     padding: 8,

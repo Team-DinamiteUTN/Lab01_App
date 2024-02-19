@@ -47,7 +47,7 @@ return (
     contentContainerStyle={{ paddingTop: 30 }}>
     <View style={styleBirds.card}>
     <Text style={styleBirds.tit_02}>{data.name}</Text>
-    <Image style ={styleBirds.imgContainer2} source={require('../imgs/Pigeons.png')} />
+    <Image style ={styleBirds.imgContainer2} source={require('../imgs/Birds/Pigeons.png')} />
     <Text style={styleBirds.tit_05}>{data.description}</Text>
     </View>
     <View>

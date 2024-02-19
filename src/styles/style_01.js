@@ -52,9 +52,10 @@ export const style_01 = StyleSheet.create({
     },
     
     h1: {
-    fontSize: 32,
+    fontSize: 28,
     fontWeight: 'bold',
     color: '#000000',
+    alignSelf: 'center'
     },
 
     referen01: {
