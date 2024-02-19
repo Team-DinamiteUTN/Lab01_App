@@ -43,11 +43,12 @@ nav.navigate('InfoComment', {token: token});
 
 return (
 <SafeAreaView>
-    <ScrollView>
+    <ScrollView
+    contentContainerStyle={{ paddingTop: 30 }}>
     <View style={styleBirds.card}>
     <Text style={styleBirds.tit_02}>{data.name}</Text>
-    <Image style ={styleBirds.imgContainer} source={require('../imgs/Pigeons.png')} />
-    <Text style={styleBirds.tit_02}>{data.description}</Text>
+    <Image style ={styleBirds.imgContainer2} source={require('../imgs/Pigeons.png')} />
+    <Text style={styleBirds.tit_05}>{data.description}</Text>
     </View>
     <View>
     <TouchableOpacity
