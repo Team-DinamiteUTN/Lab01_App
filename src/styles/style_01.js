@@ -86,4 +86,17 @@ export const style_01 = StyleSheet.create({
         flex: 1,
         backgroundColor: '#f0f0f0', 
       },
+      image: {
+        width: '100%',
+        height: 350,
+        marginBottom: 20,
+        marginTop: 20,
+    },
+    paragraph: {
+      fontSize: 16,
+      color: '#000000',
+      textAlign: 'justify',
+      margin: 25,
+
+  },
 });
